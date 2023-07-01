@@ -1,0 +1,42 @@
+{
+  "name": "@landing-page-nft/hardhat",
+  "version": "1.0.0",
+  "description": "Hardhat",
+  "author": "Jeff Mascarenhas",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "account": "hardhat run scripts/listAccount.ts",
+    "chain": "hardhat node --network hardhat --no-deploy",
+    "compile": "hardhat compile",
+    "generate": "hardhat run scripts/generateAccount.ts",
+    "deploy": "hardhat deploy"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@openzeppelin/contracts": "^4.9.2",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/qrcode": "^1.5.1",
+    "chai": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "erc721a": "^4.2.3",
+    "ethers": "^6.6.2",
+    "hardhat": "^2.16.1",
+    "hardhat-deploy": "^0.11.34",
+    "hardhat-gas-reporter": "^1.0.8",
+    "qrcode": "^1.5.3",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.2.0"
+  },
+  "dependencies": {
+    "envfile": "^6.18.0"
+  }
+}

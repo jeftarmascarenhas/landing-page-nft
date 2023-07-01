@@ -1,0 +1,24 @@
+{
+  "name": "landing-page-nft",
+  "version": "1.0.0",
+  "description": "Create a NFT smart contract and landing page for mint",
+  "main": "index.js",
+  "repository": "git@github.com:jeftarmascarenhas/landing-page-nft.git",
+  "author": "Jeff Mascarenhas",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "deploy": "yarn workspace @se-2/hardhat deploy",
+    "compile": "yarn workspace @se-2/hardhat compile",
+    "hardhat:test": "yarn workspace @se-2/hardhat test",
+    "start": "yarn workspace @se-2/nextjs dev",
+    "next:lint": "yarn workspace @se-2/nextjs lint",
+    "next:format": "yarn workspace @se-2/nextjs format"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/hardhat",
+      "packages/nextjs"
+    ]
+  }
+}
